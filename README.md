@@ -12,7 +12,7 @@ I solved the problem by doing the following:
 
 ## HOW TO RUN THE SCRIPTS
 1. Launch a redshift cluster on AWS
-2. fill out `dwh.cfg` your datbase credentials
+2. Fill out `dwh.cfg` your datbase credentials
 3. Run create_table in the python shell e.g ```python python create_tables.py```
 4. Run `etl.py` like so `python etl.py`. 
 5. Check your AWS Redshift for loaded data. You should be able to query it in the editor on AWS redshift cluster.
