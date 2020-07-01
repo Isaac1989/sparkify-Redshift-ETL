@@ -7,7 +7,7 @@ As their data engineer, I am tasked with building an ETL pipeline that extracts 
 ## APPROACH TO SOLUTION
 I solved the problem by doing the following:
 1. Designing two tables `stage_events` and `stage_songs`on Amazon Redshift  meant for loading data from AWS S3 bucket that houses the raw json files
-2. Next, dimension tables `users`, `song`, `artist`, and `times` were designed and created together with the fact table `songplay`. These five tables were used to define a star Schema. The choice of star schema is predominantly selected because it involves fewer joins which is great for data analytics. Because it involves few join, it is also fast to query.
+2. Next, I designed and created dimension tables `users`, `song`, `artist`, and `times` together with the fact table `songplay`. These five tables were used to define a star Schema. The choice of star schema is predominantly selected because it involves fewer joins which is great for data analytics. Because it involves few join, it is also fast to query.
 3. Finally, I designed and implemented an ETL process to extract the data from the AWS S3 bucket. The data was subsequently transformed before being loaded into the AWS redshift.
 
 ## HOW TO RUN THE SCRIPTS
